@@ -1,12 +1,17 @@
 ﻿using System;
 
-namespace WebServer
+namespace CsharpListenerDemo
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+
+            WebServerApplication webServerApplication = new WebServerApplication();
+            while (true)
+            {
+                webServerApplication.Start();
+            }
         }
     }
 }
